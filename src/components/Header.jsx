@@ -38,11 +38,7 @@ function Header() {
               Servicios
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/equipo" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Equipo
-            </NavLink>
-          </li>
+
           <li>
             <NavLink to="/contacto" className="contact-link">
               Contacto

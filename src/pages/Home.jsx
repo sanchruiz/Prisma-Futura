@@ -52,27 +52,92 @@ function Home() {
 
           <div className="label red l1">
             <div className="label-inner">Vigilancia Tecnológica e Inteligencia Competitiva</div>
-            <span className="label-tooltip">Monitoreamos las señales claves sectoriales, identificamos relaciones entre dominios y creamos conocimiento para la transformación competitiva y la construcción de capacidades en Inteligencia Organizacional.</span>
+            <svg className="postit-arrow postit-arrow--tr" viewBox="0 0 52 46" fill="none" aria-hidden="true">
+              <defs>
+                <marker id="arrow-tr" viewBox="0 0 10 10" refX="6" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto">
+                  <path d="M 0 1.5 L 8 5 L 0 8.5 L 2 5 Z" fill="#1A1A1A" />
+                </marker>
+              </defs>
+              <path d="M 6 36 C 16 12, 28 8, 40 14" stroke="#1A1A1A" strokeWidth="2.2" strokeLinecap="round" markerEnd="url(#arrow-tr)" fill="none"/>
+            </svg>
+            <div className="postit-card postit-card--yellow">
+              <p className="postit-text">Monitoreamos las señales clave de su sector, creando conocimiento y capacidades en Inteligencia Organizacional.</p>
+            </div>
           </div>
+
           <div className="label red l2">
             <div className="label-inner">Prospectiva y planeación</div>
-            <span className="label-tooltip">Diseñamos escenarios de futuro y las apuestas estratégicas que guiarán la gestión de organizaciones y territorios para la transformación sostenible.</span>
+            <svg className="postit-arrow postit-arrow--mr" viewBox="0 0 52 36" fill="none" aria-hidden="true">
+              <defs>
+                <marker id="arrow-mr" viewBox="0 0 10 10" refX="6" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto">
+                  <path d="M 0 1.5 L 8 5 L 0 8.5 L 2 5 Z" fill="#1A1A1A" />
+                </marker>
+              </defs>
+              <path d="M 6 18 C 18 12, 30 12, 40 16" stroke="#1A1A1A" strokeWidth="2.2" strokeLinecap="round" markerEnd="url(#arrow-mr)" fill="none"/>
+            </svg>
+            <div className="postit-card postit-card--red">
+              <p className="postit-text">Diseñamos escenarios futuros y apuestas estratégicas que guiarán la transformación organizacional y territorial sostenible.</p>
+            </div>
           </div>
+
           <div className="label red l3">
             <div className="label-inner">Gestión de la tecnología y la innovación</div>
-            <span className="label-tooltip">Fortalecemos capacidades de innovación, articulamos ecosistemas y gestionamos conocimiento para acelerar el desarrollo y la transferencia tecnológica.</span>
+            <svg className="postit-arrow postit-arrow--br" viewBox="0 0 52 40" fill="none" aria-hidden="true">
+              <defs>
+                <marker id="arrow-br" viewBox="0 0 10 10" refX="6" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto">
+                  <path d="M 0 1.5 L 8 5 L 0 8.5 L 2 5 Z" fill="#1A1A1A" />
+                </marker>
+              </defs>
+              <path d="M 6 14 C 18 20, 28 24, 40 24" stroke="#1A1A1A" strokeWidth="2.2" strokeLinecap="round" markerEnd="url(#arrow-br)" fill="none"/>
+            </svg>
+            <div className="postit-card postit-card--red">
+              <p className="postit-text">Construimos capacidades y redes de innovación, diseñando estrategias para transferir conocimiento, tecnología y propiedad intelectual.</p>
+            </div>
           </div>
+
           <div className="label red l4">
             <div className="label-inner">Investigación y Generación de Conocimiento</div>
-            <span className="label-tooltip">Desarrollamos investigación aplicada en Prospectiva; en Vigilancia Tecnológica y en Construcción de Capacidad Institucional e Inteligencia Organizacional.</span>
+            <svg className="postit-arrow postit-arrow--bl" viewBox="0 0 52 56" fill="none" aria-hidden="true">
+              <defs>
+                <marker id="arrow-bl" viewBox="0 0 10 10" refX="6" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto">
+                  <path d="M 0 1.5 L 8 5 L 0 8.5 L 2 5 Z" fill="#1A1A1A" />
+                </marker>
+              </defs>
+              <path d="M 44 8 C 38 24, 26 42, 10 46" stroke="#1A1A1A" strokeWidth="2.2" strokeLinecap="round" markerEnd="url(#arrow-bl)" fill="none"/>
+            </svg>
+            <div className="postit-card postit-card--red">
+              <p className="postit-text">Construimos nuestro propio conocimiento operando como una unidad de monitoreo y vigilancia permanente del entorno.</p>
+            </div>
           </div>
+
           <div className="label red l5">
             <div className="label-inner">Gestión, Seguimiento y Evaluación</div>
-            <span className="label-tooltip">Diseñamos e implementamos sistemas de monitoreo y evaluación, generando evidencia para fortalecer la capacidad institucional y la toma de decisiones.</span>
+            <svg className="postit-arrow postit-arrow--ml" viewBox="0 0 50 36" fill="none" aria-hidden="true">
+              <defs>
+                <marker id="arrow-ml" viewBox="0 0 10 10" refX="6" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto">
+                  <path d="M 0 1.5 L 8 5 L 0 8.5 L 2 5 Z" fill="#1A1A1A" />
+                </marker>
+              </defs>
+              <path d="M 42 16 C 30 11, 20 11, 8 16" stroke="#1A1A1A" strokeWidth="2.2" strokeLinecap="round" markerEnd="url(#arrow-ml)" fill="none"/>
+            </svg>
+            <div className="postit-card postit-card--yellow">
+              <p className="postit-text">Diseñamos e implementamos sistemas de monitoreo y evaluación, generando evidencia para fortalecer la capacidad institucional.</p>
+            </div>
           </div>
+
           <div className="label red l6">
             <div className="label-inner">Políticas Públicas, Planes y Proyectos</div>
-            <span className="label-tooltip">Transformamos evidencia y conocimiento territorial en políticas públicas, planes y proyectos orientados a resultados e impacto.</span>
+            <svg className="postit-arrow postit-arrow--tl" viewBox="0 0 52 46" fill="none" aria-hidden="true">
+              <defs>
+                <marker id="arrow-tl" viewBox="0 0 10 10" refX="6" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto">
+                  <path d="M 0 1.5 L 8 5 L 0 8.5 L 2 5 Z" fill="#1A1A1A" />
+                </marker>
+              </defs>
+              <path d="M 44 36 C 34 18, 24 10, 10 12" stroke="#1A1A1A" strokeWidth="2.2" strokeLinecap="round" markerEnd="url(#arrow-tl)" fill="none"/>
+            </svg>
+            <div className="postit-card postit-card--yellow">
+              <p className="postit-text">Transformamos evidencia y conocimiento territorial en instrumentos de gestión orientados a resultados e impacto.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -170,29 +235,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Diferenciadores */}
-      <section id="diferenciadores" className="diferenciadores section fade-in">
-        <div className="container">
-          <h2 className="section-title">Algunas contribuciones clave de nuestro equipo consultor</h2>
-          <ul className="diferenciadores-list">
-            <li>La experiencia de nuestro equipo incluye desde aportes al gobierno central colombiano en la formulación de la política nacional de IA y la transformación digital, pasando por la formulación de planes prospectivos de sectores económicos y para entes territoriales; hasta el desarrollo de metodologías de mapeo de impacto adaptables a la diversidad institucional.</li>
-          </ul>
-        </div>
-      </section>
 
-      {/* Sectores de Impacto */}
-      <section id="sectores" className="sectores section fade-in">
-        <div className="container">
-          <h2 className="section-title">Sectores de impacto</h2>
-          <ul className="sectores-list">
-            <li><strong>Sector Público:</strong> Transformación institucional y desarrollo territorial.</li>
-            <li><strong>Empresas Privadas:</strong> Estrategia competitiva y innovación organizacional.</li>
-            <li><strong>Organizaciones del Conocimiento:</strong> Investigación aplicada y transferencia tecnológica.</li>
-            <li><strong>Ecosistemas de Innovación:</strong> Articulación y fortalecimiento sectorial.</li>
-          </ul>
-          <p>En Prisma Futura, cada proyecto es una oportunidad de construir el mañana que todos necesitamos.</p>
-        </div>
-      </section>
     </main>
   );
 }
