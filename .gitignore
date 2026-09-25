@@ -1,0 +1,17 @@
+# Dependencias (Evita el error que tuviste en Vercel)
+node_modules
+.pnp
+.pnp.js
+
+# Archivos de compilación o distribución
+dist
+build
+.output
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Variables de entorno o credenciales secretas
+.env
+.env.local
