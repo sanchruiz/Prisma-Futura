@@ -40,8 +40,8 @@ function Contacto() {
                   <a href="mailto:contacto@prismafutura.co">prismafutura.de@gmail.com</a>
                 </p>
                 <p>
-                  <strong>Dirección:</strong><br />
-                  Colombia
+                  <strong>Cali, Colombia</strong><br />
+                  
                 </p>
               </div>
             </div>
