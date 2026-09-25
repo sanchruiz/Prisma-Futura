@@ -334,7 +334,7 @@ p {
   text-align: left;
   user-select: text;
   /* Ambient contact shadow + right-side lifted paper shadow */
-  box-shadow: 
+  box-shadow:
     0 1px 3px rgba(0, 0, 0, 0.06),
     0 6px 14px rgba(0, 0, 0, 0.1),
     10px 14px 24px -3px rgba(0, 0, 0, 0.24);
@@ -451,7 +451,7 @@ p {
 /* Static hover effect without movement */
 .label:hover .postit-card,
 .postit-card:hover {
-  box-shadow: 
+  box-shadow:
     0 1px 4px rgba(0, 0, 0, 0.08),
     0 8px 18px rgba(0, 0, 0, 0.14),
     12px 18px 28px -2px rgba(0, 0, 0, 0.3);
@@ -837,6 +837,18 @@ p {
   margin-top: 2rem;
 }
 
+.contact-content.centered-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-contact .contact-info {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
 .contact-info {
   background: var(--bg-alt);
   padding: 3rem;
@@ -995,8 +1007,8 @@ p {
 .radar-section {
   position: relative;
   background: radial-gradient(ellipse 70% 40% at 50% 0%, rgba(59, 130, 246, 0.12), transparent 70%),
-              radial-gradient(ellipse 50% 30% at 80% 20%, rgba(94, 33, 41, 0.15), transparent 60%),
-              linear-gradient(180deg, #0d0e12 0%, #070709 100%) !important;
+    radial-gradient(ellipse 50% 30% at 80% 20%, rgba(94, 33, 41, 0.15), transparent 60%),
+    linear-gradient(180deg, #0d0e12 0%, #070709 100%) !important;
   padding: 6rem 0 6rem !important;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
@@ -1193,6 +1205,350 @@ p {
 
 .radar-card__cta:hover .radar-arrow {
   transform: translate(2px, -2px);
+}
+
+/* ── Nuestros Servicios (Home) ── */
+.servicios-home {
+  background: #0d0e12 !important;
+  padding: 5rem 0 !important;
+  border-top: 6px solid var(--accent-primary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.servicios-home-container {
+  max-width: 1200px;
+}
+
+.servicios-home-title {
+  color: #ffffff !important;
+  margin-bottom: 3.5rem;
+}
+
+/* 2-column grid, each row is one service block */
+.servicios-home-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Individual service block — two-column layout matching the sketch */
+.sh-bloque {
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr;
+  gap: 0 2.5rem;
+  padding: 2.8rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  align-items: start;
+  scroll-margin-top: 100px;
+}
+
+.sh-bloque:last-child {
+  border-bottom: none;
+}
+
+/* Left column: number + title + description */
+.sh-izq {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sh-numero-titulo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f5a623;
+  /* amber/gold — matches boceto */
+  line-height: 1.35;
+}
+
+.sh-numero {
+  color: #f5a623;
+}
+
+.sh-descripcion {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Enlace 'Ver detalles completos →' */
+.sh-link-detalle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #f5a623;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: all 0.25s ease;
+  width: fit-content;
+}
+
+.sh-link-flecha {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.sh-link-detalle:hover {
+  color: #ffba42;
+  opacity: 0.9;
+}
+
+.sh-link-detalle:hover .sh-link-flecha {
+  transform: translateX(4px);
+}
+
+/* The italic hook phrase rendered in muted grey like the boceto */
+.sh-hook {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 400;
+}
+
+/* Vertical separator */
+.sh-separador {
+  width: 2px;
+  background: #f5a623;
+  opacity: 0.55;
+  align-self: stretch;
+  border-radius: 2px;
+  min-height: 100px;
+}
+
+/* Right column: bullet sub-items */
+.sh-der {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  padding-left: 0.5rem;
+}
+
+.sh-subitem {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.sh-subitem:last-child {
+  border-bottom: none;
+}
+
+/* Variante expandida — columna derecha con título + descripción (página Servicios) */
+.sh-der--detalle {
+  gap: 0;
+}
+
+.sh-subitem-detalle {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sh-subitem-detalle:last-child {
+  border-bottom: none;
+}
+
+.sh-subitem-titulo {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.4rem 0;
+  line-height: 1.4;
+  /* dorado bullet usando pseudo-elemento */
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.sh-subitem-titulo::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #f5a623;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.sh-subitem-desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sh-bloque {
+    grid-template-columns: 1fr;
+    gap: 1.5rem 0;
+    padding: 2rem 0;
+  }
+
+  .sh-separador {
+    width: 100%;
+    height: 2px;
+    min-height: unset;
+    align-self: auto;
+  }
+}
+
+/* ── Team Profiles Section ── */
+.team-section {
+  background: var(--bg-color) !important;
+}
+
+.team-container {
+  max-width: 1100px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem 3rem;
+  margin-top: 1rem;
+}
+
+/* Card outer wrapper — needs overflow visible so the circle can overflow */
+.profile-card {
+  position: relative;
+  padding-top: 65px;
+  /* space for the protruding circle (half of 130px diameter) */
+}
+
+/* The circle sits half-inside / half-outside the top-left of the card box */
+.profile-photo-wrapper {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3.5px solid var(--accent-primary);
+  background: var(--bg-alt);
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(94, 33, 41, 0.2);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateZ(0);
+}
+
+.profile-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  /* centra la cara */
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  filter: contrast(1.04) brightness(1.01);
+  /* Aumenta sutilmente la definición y realce de bordes */
+}
+
+.profile-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(94, 33, 41, 0.08), rgba(94, 33, 41, 0.04));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo-icon {
+  font-size: 3.2rem;
+  opacity: 0.5;
+}
+
+/* The visible card box */
+.profile-card-body {
+  background: var(--bg-alt);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  padding: 1.8rem 1.8rem 2rem 1.8rem;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-card:hover .profile-card-body {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(94, 33, 41, 0.2);
+}
+
+/* Header area: name + role — sits to the right of the circle space */
+.profile-card-header {
+  padding-left: 115px;
+  /* clear the circle width inside the card */
+  min-height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  line-height: 1.3;
+  margin-bottom: 0.3rem;
+}
+
+.profile-role {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  line-height: 1.4;
+  font-style: italic;
+  margin: 0;
+}
+
+.profile-bio {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin: 0;
+  flex: 1;
+}
+
+/* Responsive: single column on small screens */
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .profile-card-header {
+    padding-left: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    padding-top: 55px;
+  }
+
+  .profile-photo-wrapper {
+    width: 110px;
+    height: 110px;
+    left: 16px;
+  }
+
+  .profile-card-header {
+    padding-left: 95px;
+  }
 }
 
 /* Footer */
